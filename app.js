@@ -27,10 +27,10 @@ const { Client, GatewayIntentBits, Partials  } = require("discord.js"),
           ]
     });
 
-const name = require("../package.json").name,
-    version = require("../package.json").version,
-    author = require("../package.json").author,
-    url = require("../package.json").repository.url;
+const name = require("./package.json").name,
+    version = require("./package.json").version,
+    author = require("./package.json").author,
+    url = require("./package.json").repository.url;
 
 // ROUTES
 app.get("/", cors(corsOptions), (req, res) => {
