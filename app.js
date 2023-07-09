@@ -41,7 +41,7 @@ app.get("/", cors(corsOptions), (req, res) => {
 // GET USER INFORMATION
 app.get("/discord/user/:userID", cors(corsOptions), (req, res) => {
     client.users.fetch(req.params.userID).then((user) => {
-        const results = ({ username: `${user.username}`, bot: `${user.bot}`, url: `${user.displayAvatarURL({ extension: "png", size: 4096, dynamic: true })}`, banner: `${user.bannerURL({ extension: "png", size: 4096, dynamic: true })}`, accentHex: `${user.hexAccentColor}`, created: `${user.createdAt}` });
+        const results = ({ username: `${user.username}`, bot: `${user.bot}`, url: `${user.displayAvatarURL({ format: "png", size: 4096, dynamic: true })}`, banner: `${user.bannerURL({ format: "png", size: 4096, dynamic: true })}`, accentHex: `${user.hexAccentColor}`, created: `${user.createdAt}` });
         return res.send(results);
     });
 });
