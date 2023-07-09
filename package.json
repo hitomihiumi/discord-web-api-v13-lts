@@ -1,5 +1,5 @@
 {
-  "name": "discord-web-api",
+  "name": "discord-web-api-v13-lts",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hitomihiumi/discord-web-api.git"
+    "url": "git+https://github.com/hitomihiumi/discord-web-api-v13-lts.git"
   },
   "author": "Hadi Koubeissi, hitomihiumi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hitomihiumi/discord-web-api/issues"
+    "url": "https://github.com/hitomihiumi/discord-web-api-v13-lts/issues"
   },
-  "homepage": "https://github.com/hitomihiumi/discord-web-api#readme",
+  "homepage": "https://github.com/hitomihiumi/discord-web-api-v13-lts#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "discord.js": "^13.16.0",
