@@ -18,7 +18,6 @@ const { Client, GatewayIntentBits, Partials  } = require("discord.js"),
             parse: [ ],
             repliedUser: false,
           },
-          partials: [Partials.Message, Partials.Channel, Partials.Reaction],
           intents: [ 
             GatewayIntentBits.GuildMembers,
             GatewayIntentBits.DirectMessages,
