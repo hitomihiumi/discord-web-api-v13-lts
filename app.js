@@ -12,17 +12,17 @@ var corsOptions = {
     optionsSuccessStatus: 200
 }
 
-const { Client, GatewayIntentBits, Partials  } = require("discord.js"),
+const { Client, Intents  } = require("discord.js"),
     client = new Client({
         allowedMentions: {
             parse: [ ],
             repliedUser: false,
           },
           intents: [ 
-            GatewayIntentBits.GuildMembers,
-            GatewayIntentBits.DirectMessages,
-            GatewayIntentBits.DirectMessageReactions,
-            GatewayIntentBits.DirectMessageTyping
+            Intents.FLAGS.GUILD_MEMBERS,
+            Intents.FLAGS.DIRECT_MESSAGES,
+            Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+            Intents.FLAGS.DIRECT_MESSAGE_TYPING
           ]
     });
 
